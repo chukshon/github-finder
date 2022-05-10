@@ -1,9 +1,15 @@
+import UserResults from "../components/users/UserResults"
+
 const Home = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+
+    // Search Result Component
+     
+
+    // User Result Component
+    <UserResults />
   )
 }
 
 export default Home
+
