@@ -1,12 +1,12 @@
-import {useContext } from 'react'
-import useAppContext from '../../context/github/GithubContext'
+import useAlertContext from '../../context/alert/AlertContext'
+import useGithubContext from '../../context/github/GithubContext'
 import Spinner from '../layouts/Spinner'
 import UserItem from './UserItem'
 
-
 const UserResults = () => {
 
-  const {users, isLoading, fetchUsers} = useAppContext()
+  const {users, isLoading} = useGithubContext();
+  
   // useEffect(() => {
   //   fetchUsers()
   // }, [])
